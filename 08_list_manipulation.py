@@ -53,5 +53,3 @@ def list_manipulation(lst, command, location, value=None):
             return lst
         elif command == "remove":
             return lst.pop()
-
-    return None

@@ -21,3 +21,11 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    stripped = phrase.replace(" ", "").lower()
+
+    if stripped[::-1] == stripped:
+        return True
+    else:
+        return False
+
+

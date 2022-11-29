@@ -11,7 +11,4 @@ def single_letter_count(word, letter):
         3
     """
 
-    word_list = list(word.lower())
-    letter = letter.lower()
-
-    return word_list.count(letter)
+    return word.lower().count(letter.lower()) # no need to convert to list
