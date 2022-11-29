@@ -22,10 +22,6 @@ def is_palindrome(phrase):
         True
     """
     stripped = phrase.replace(" ", "").lower()
-
-    if stripped[::-1] == stripped:
-        return True
-    else:
-        return False
+    return stripped == stripped[::-1]
 
 
